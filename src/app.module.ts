@@ -1,8 +1,8 @@
-import { Module, HttpModule } from '@nestjs/common';
+import { Module } from '@nestjs/common';
 import { CommuneModule } from './modules/commune/commune.module';
-// import { PharmacyModule } from './modules/pharmacy/pharmacy.module';
+import { PharmacyModule } from './modules/pharmacy/pharmacy.module';
 
 @Module({
-  imports: [CommuneModule],
+  imports: [CommuneModule, PharmacyModule],
 })
 export class AppModule {}

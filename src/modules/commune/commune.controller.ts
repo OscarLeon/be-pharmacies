@@ -5,8 +5,9 @@ import { CommuneService } from './commune.service';
 export class CommuneController {
   constructor(private readonly communeService: CommuneService) {}
 
-  @Get('/stateID/:id')
+  @Get('/:id')
   getCommunesByStateId(@Param('id') id: string) {
+    console.log('id: ', id);
     return this.communeService.getCommunesByStateId(id);
   }
 }

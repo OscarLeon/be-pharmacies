@@ -1,5 +1,5 @@
 import { HttpService, Injectable, Logger } from '@nestjs/common';
-import * as FormDataFuntcion from 'form-data';
+import * as FormDataFunction from 'form-data';
 @Injectable()
 export class CommuneService {
   private readonly urlCommunesByStateId: string;
@@ -10,7 +10,7 @@ export class CommuneService {
   }
   async getCommunesByStateId(stateID: string) {
     try {
-      const formData = new FormDataFuntcion();
+      const formData = new FormDataFunction();
       formData.append('reg_id', stateID);
       return await this.http
         .post(this.urlCommunesByStateId, formData.getBuffer(), {
@@ -22,5 +22,3 @@ export class CommuneService {
     }
   }
 }
-
-//       'https://farmanet.minsal.cl/maps/index.php/ws/getLocalesRegion?id_region=';
