@@ -5,7 +5,7 @@ export class CommuneService {
   private readonly urlCommunesByStateId: string;
   constructor(private readonly http: HttpService) {
     this.urlCommunesByStateId =
-      'https://midastest.minsal.cl/farmacias/maps/index.php/utilidades/maps_obtener_comunas_por_regiones';
+      'https://midastest.minsal.cl/farmacias/maps/index.php/utilidades/maps_obtener_comunas_por_regiones/';
     this.http.axiosRef.interceptors.response.use(response => response.data);
   }
   async getCommunesByStateId(stateID: string) {
