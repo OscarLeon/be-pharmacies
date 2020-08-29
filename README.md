@@ -13,7 +13,7 @@ Paso 1: Ejecutamos el siguiente comando
 npm install
 ```
 
-Paso Final: Ejecutamos el siguiente script para tener el servidor ejecutandose de modo que si existen cambios se autorefresque
+Paso 2: Ejecutamos el siguiente script para tener el servidor ejecutandose de modo que si existen cambios se autorefresque
 
 ```
 npm run watch
@@ -24,4 +24,10 @@ Paso Final: Luego escribimos en nuestro navegador la siguiente url para ver la a
 ```
 http://localhost:3000/commune/7
 http://localhost:3000/pharmacy
+```
+
+Paso Extra: Como valor adicional se incluye Swagger, un entorno para testear APIs, por lo que si deseas testearlas puedes ingresar al siguiente enlace:
+
+```
+http://localhost:3000/api/
 ```
