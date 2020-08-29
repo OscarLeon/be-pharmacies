@@ -22,7 +22,6 @@ npm run watch
 Paso Final: Luego escribimos en nuestro navegador la siguiente url para ver la api este funcionando correctamente
 
 ```
-http://localhost:3000/
 http://localhost:3000/commune/7
 http://localhost:3000/pharmacy
 ```
