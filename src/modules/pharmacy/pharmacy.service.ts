@@ -9,6 +9,9 @@ export class PharmacyService {
   }
 
   async getAllPharmaciesByStateId(stateID: string) {
-    return await this.http.get(this.urlPharmaciesByStateId).toPromise();
+    const allPharmaciesByStateId = await this.http
+      .get(this.urlPharmaciesByStateId)
+      .toPromise();
+    return allPharmaciesByStateId.data;
   }
 }
