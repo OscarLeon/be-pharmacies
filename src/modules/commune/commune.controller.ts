@@ -9,7 +9,6 @@ export class CommuneController {
 
   @Get('/:id')
   getCommunesByStateId(@Param('id') id: string) {
-    console.log('id: ', id);
     return this.communeService.getCommunesByStateId(id);
   }
 }
