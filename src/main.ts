@@ -8,6 +8,8 @@ async function bootstrap() {
     cors: true,
   });
 
+  app.setGlobalPrefix('v1/api');
+
   const options = new DocumentBuilder()
     .setTitle('Backend de Farmacias en Turno')
     .setDescription(

@@ -1,4 +1,4 @@
-import { HttpService, Injectable, Logger } from '@nestjs/common';
+import { HttpService, Injectable } from '@nestjs/common';
 import * as FormDataFunction from 'form-data';
 @Injectable()
 export class CommuneService {
@@ -10,16 +10,12 @@ export class CommuneService {
     this.http.axiosRef.interceptors.response.use(response => response.data);
   }
   async getCommunesByStateId(stateID: string) {
-    try {
-      const formData = new FormDataFunction();
-      formData.append('reg_id', stateID);
-      return await this.http
-        .post(this.urlCommunesByStateId, formData.getBuffer(), {
-          headers: formData.getHeaders(),
-        })
-        .toPromise();
-    } catch (error) {
-      Logger.error(error);
-    }
+    const formData = new FormDataFunction();
+    formData.append('reg_id', stateID);
+    return await this.http
+      .post(this.urlCommunesByStateId, formData.getBuffer(), {
+        headers: formData.getHeaders(),
+      })
+      .toPromise();
   }
 }
