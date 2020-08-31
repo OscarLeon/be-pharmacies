@@ -72,11 +72,18 @@ Paso 1: Ejecutamos el siguiente comando para tener el servidor ejecutandose de m
 npm run watch
 ```
 
-Paso Final: Luego escribimos en nuestro navegador la siguiente url para ver la api este funcionando correctamente
+Paso Final: Luego escribimos en nuestro navegador la siguiente url para ver la api este funcionando correctamente.
 
 ```
-http://localhost:3000/commune/7
-http://localhost:3000/pharmacy
+http://localhost:3000/v1/api/commune/7 ----> Obtenemos las comunas de la region metropolitana(Se puede cambiar el numero acorde a la region, pero para esta API usaremos solo RM)
+```
+
+```
+http://localhost:3000/v1/api/pharmacy ----> Obtenemos las farmacias de la RM(Llamada al servicio original entregado)
+```
+
+```
+http://localhost:3000/v1/api/pharmacy-duty----> Obtenemos las farmacias de la RM recuperando datos usados para cualquier aplicacion front end
 ```
 
 Paso Extra: Como valor adicional se incluye Swagger, un entorno para testear APIs, por lo que si deseas testearlas puedes ingresar al siguiente enlace:
