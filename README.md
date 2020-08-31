@@ -1,19 +1,73 @@
-# be-pharmacies(Desafío FullStack Consorcio)
+# Farmacia en Turno - Backend
 
-## Requerimientos
+## 1. Frameworks Utilizados
 
-- Instalar Node v11.x.x
-- Instalar NPM v6.x.x
+- VueJS 2.6
+- Bootstrap 4.5
 
-## Pasos para ejecutar la aplicación
+## 2. Requerimientos
 
-Paso 1: Ejecutamos el siguiente comando
+### 2.1 Requerimientos mínimos en el servidor
+
+- Memoria ram 512MB
+- 1 vCPU
+- 1 GB SSD
+
+### 2.2 Técnicos
+
+- Node >= 8.9.0
+- Npm >= 5.5.1
+
+## 3. Instalación Desarrollo
+
+Se debe clonar el repositorio perteneciente al proyecto, este proyecto está bajo el software de control de
+versiones llamado git y hospedado en GitHub, para clonar el repositorio se debe ejecutar el siguiente comando,
+
+    git clone https://github.com/OscarLeon/be-pharmacies.git
+
+> Este comando te pedirá autenticación, deberás autenticarte con tu usuario y constraseña.
+
+Una vez autenticado comenzara la clonación del repositorio. Este repositorio contiene el proyecto, sin las librerías
+externas de JavaScript utilizadas, por ende, se debe a proceder a instalarlas de la forma que se describe a continuación:
+
+Cuando esté el repositorio clonado, se deberá ingresar a él, está ubicado en el directorio `be-pharmacies`
+que se acabó de crear al ejecutar el comando anterior.
+
+    cd be-pharmacies
+
+Luego, la instalación de las librerias JS necesarias:
 
 ```
 npm install
 ```
 
-Paso 2: Ejecutamos el siguiente script para tener el servidor ejecutandose de modo que si existen cambios se autorefresque
+### Compilando para desarrollo
+
+```
+npm run watch (Uso de nodemon para estar atento a los cambios)
+```
+
+### Compilando para producción
+
+```
+npm run build
+```
+
+### Run your tests
+
+```
+npm run test
+```
+
+### Lints and fixes files
+
+```
+npm run lint
+```
+
+## 4. Pasos para ejecutar la aplicación
+
+Paso 1: Ejecutamos el siguiente comando para tener el servidor ejecutandose de modo que si existen cambios se autorefresque
 
 ```
 npm run watch
@@ -31,3 +85,9 @@ Paso Extra: Como valor adicional se incluye Swagger, un entorno para testear API
 ```
 http://localhost:3000/api/
 ```
+
+## 5. Soporte
+
+En caso de necesitar ayuda contactar a:
+
+- oleon.icci@gmail.com
